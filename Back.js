@@ -3,9 +3,16 @@ var generateBtn = document.querySelector("#generate");
 
 
 // Write password to the #password input
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+console.log(getRandomInt(100000000));
+
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  const password = generatePassword();
+  const passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
@@ -18,6 +25,7 @@ function copyToClipboard() {
 }
 
 // Add event listener to generate button
+
 generateBtn.addEventListener("click", writePassword);
 
 // BONUS EVENT LISTENER
