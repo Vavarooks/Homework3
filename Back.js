@@ -1,4 +1,5 @@
 // Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
 
@@ -8,11 +9,12 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-console.log(getRandomInt(100000000));
 
 function writePassword() {
-  const password = generatePassword();
+  const password = generatePassword("#generate");
   const passwordText = document.querySelector("#password");
+
+
 
   passwordText.value = password;
 
