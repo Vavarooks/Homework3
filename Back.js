@@ -5,29 +5,29 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+
+function makeid(length) {
+  var result           = '';
+  var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var charactersLength = characters.length;
+  for ( var i = 0; i < length; i++ ) {
+     result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
 }
 
 
-function writePassword() {
-  const password = generatePassword("#generate");
-  const passwordText = document.querySelector("#password");
+// let pass = confirm("Do you want to generate a password?");
+
+// if (pass) {
+//   alert(makeid(8));
+// }
+// else {
+//   console.log(makeid(8));
+// }
 
 
-
-  passwordText.value = password;
-
-  copyBtn.removeAttribute("disabled");
-  copyBtn.focus();
-}
-
-function copyToClipboard() {
-  // BONUS 
-}
-
-// Add event listener to generate button
-
-generateBtn.addEventListener("click", writePassword);
-
-// BONUS EVENT LISTENER
+// function myFunction() {
+//   var x = document.getElementById("password").value;
+//   document.getElementById("demo").innerHTML = x;
+// }
