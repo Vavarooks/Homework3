@@ -17,14 +17,14 @@ function makeid(length) {
 }
 
 
-// let pass = confirm("Do you want to generate a password?");
+let pass = confirm("Do you want to generate a password?");
 
-// if (pass) {
-//   alert(makeid(8));
-// }
-// else {
-//   console.log(makeid(8));
-// }
+if (pass) {
+  alert(makeid(8));
+}
+else {
+  console.log(makeid(8));
+}
 
 
 // function myFunction() {
