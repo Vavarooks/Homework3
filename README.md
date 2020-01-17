@@ -33,4 +33,4 @@ A button
 
 Holds a function that makes a randomly generated pasword with uppercase, lowercase and special charaters with numbers.
 
--The Css holds a few color changes to the h1 and h2 tags in the Html.
+-The Css holds color changes to the h1, h2, the text area and the button. It also holds the margin, padding, boarder changes I made.
