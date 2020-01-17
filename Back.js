@@ -29,8 +29,11 @@ function generatePassword(length) {
 }
 
 
+// document.getElementById('myTextarea').value = '';
+
+
 generateBtn.addEventListener("click", function()
 
 {
-  document.getElementById("password").innerHTML =generatePassword(8)
+  document.getElementById("password").innerHTML =generatePassword(12)
 });
