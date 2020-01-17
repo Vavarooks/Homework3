@@ -48,3 +48,15 @@ button {
     background-color: teal;
     margin: 10px;
 }
+
+form {
+    width: 160px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    color: lightsteelblue;
+    background-color: teal;
+    margin: 10px;
+
+}

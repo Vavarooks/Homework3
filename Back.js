@@ -2,16 +2,19 @@
 
 var generateBtn = document.querySelector("#generate");
 
+var lowerBtn = document.querySelector("#lowerBox");
+
+var upperBtn = document.querySelector("#upperBox");
+
+var numbersBtn = document.querySelector("#numbersBox");
+
+var symbolBtn = document.querySelector("#symbolBox");
+
+
 // generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 
-
-// function writePassword() {
-//   let password = generatePassword();
-//   let passwordText = document.querySelector("#password");
-//   passwordText.value = password;
-// }
 
 
 function generatePassword(length) {
@@ -26,32 +29,8 @@ function generatePassword(length) {
 }
 
 
-
-
 generateBtn.addEventListener("click", function()
 
 {
   document.getElementById("password").innerHTML =generatePassword(8)
 });
-
-
-
-// function myFunk() {
-
-  
-
-// }
-
-
-// document.getElementById(`myTextarea`).oninvalid
-
-
-// let passWord = confirm("Do you want to generate a password?");
-
-// if (passWord) {
-//   alert(generatePassword(8));
-// }
-// else {
-//   console.log(generatePassword(8));
-// }
-
