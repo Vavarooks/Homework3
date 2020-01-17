@@ -1,6 +1,36 @@
 h1 {
-    color: lightsalmon
+    color: lightsteelblue;
+    background-color: teal;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
 }
+
 h2 {
-    color: lightsalmon
+    color: lightsteelblue;
+    background-color: teal;
+    margin: auto;
+    padding:5px;
+    text-align: center;
+}
+
+div {
+    margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+
+
+textarea {
+    border-color: black;
+    border-width: 2px;
+    align-content: center;
+}
+
+button {
+    width: 160px;
+    line-height: 30px;
+    text-align: center;
+    
 }
