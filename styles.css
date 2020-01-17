@@ -25,7 +25,7 @@ div {
 textarea {
     border-color: black;
     border-width: 2px;
-    align-content: center;
+    text-align: center;
 }
 
 button {
