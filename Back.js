@@ -1,14 +1,14 @@
 // Assignment Code
 
-var generateBtn = document.querySelector("#generate");
+let generateBtn = document.querySelector("#generate");
 
-var lowerBtn = document.querySelector("#lowerBox");
+let lowerBtn = document.querySelector("#lowerBox").value;
 
-var upperBtn = document.querySelector("#upperBox");
+let upperBtn = document.querySelector("#upperBox").value;
 
-var numbersBtn = document.querySelector("#numbersBox");
+let numbersBtn = document.querySelector("#numbersBox").value;
 
-var symbolBtn = document.querySelector("#symbolBox");
+let symbolBtn = document.querySelector("#symbolsBox").value;
 
 
 // generateBtn.addEventListener("click", writePassword);
@@ -16,24 +16,63 @@ var symbolBtn = document.querySelector("#symbolBox");
 // Write password to the #password input
 
 
+let message = prompt("How long would you like the password?");
+let messageLength = parseInt(message);
 
-function generatePassword(length) {
-  var result           = '';
-  var characters       = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[]^_{|}~`;
-  var charactersLength = characters.length;
-  for ( var i = 0; i < length; i++ ) {
-     result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return result;
 
+function generatePassword() {
+  let result           = '';
+  let finish = '';
+  const characters       = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
+  const lowerCharacters = "abcdefghijklmnopqrstuvwxyz";
+  const numbers = "0123456789"
+const symbols = `!#$%&()*+-/<=>?@[]^_{|}~`;
+
+debugger
+
+if (lowerBtn===true) {
+result += lowerCharacters;
+console.log(result);
 }
 
+if (upperBtn===true) {
+result += characters;
+console.log(result);
+}
+
+if (numbersBtn===true) {
+result += numbers;
+console.log(result);
+}
+
+if (symbolBtn===true) {
+result += symbols;
+console.log(result);
+}
+
+
+var charactersLength = result.length;
+ for ( var i = 0; i < messageLength; i++ ) {
+     finish += result.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return finish;
+ 
+}
 
 // document.getElementById('myTextarea').value = '';
 
 
-generateBtn.addEventListener("click", function()
+generateBtn.addEventListener("click", function() {
 
-{
-  document.getElementById("password").innerHTML =generatePassword(12)
-});
+  let final = generatePassword()
+  document.getElementById("password").innerHTML = final
+
+alert(final);
+} );
+
+
+
+
+// {
+//   document.getElementById("password").innerHTML = generatePassword()
+// });
