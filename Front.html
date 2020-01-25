@@ -10,45 +10,50 @@
 </head>
 
 <body>
+
   
-  <div class="wrapper">
     <header>
       <h1>Password Generator</h1>
     </header>
-    <div class="card">
-      <div class="card-header">
-        <h2>Generate a Password</h2>
-      </div>
+  
+    <h2>Generate a Password</h2>
 
-      <form class="checkBoxes">
-        
-          <label for="lowerBox">
-              <input type="checkbox" id="lowerBox"><span></span> Lowercase</label>
-          <br>
-          <label for="upperBox">
-              <input type="checkbox" id="upperBox"><span></span> Uppercase</label>
-          <br>
-          <label for="numbersBox">
-              <input type="checkbox" id="numbersBox"><span></span> Numbers</label>
-          <br>
-          <label for="symbolsBox">
-              <input type="checkbox" id="symbolsBox"><span></span> Symbols</label>
-      
+  <div class="form2">
+    <p>Input password length</p>
+
+    <input id="passwordLength" type="number" min="6" max="128">
+
+    <form class="checkBoxes">
+
+      <label for="lowerBox">
+        <input type="checkbox" id="lowerBox"><span></span> Lowercase</label>
+      <br>
+      <label for="upperBox">
+        <input type="checkbox" id="upperBox"><span></span> Uppercase</label>
+      <br>
+      <label for="numbersBox">
+        <input type="checkbox" id="numbersBox"><span></span> Numbers</label>
+      <br>
+      <label for="symbolsBox">
+        <input type="checkbox" id="symbolsBox"><span></span> Symbols</label>
+
     </form>
 
-      <div class="card-body">
-        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password">
+  </div>
+
+  <div>
+    <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password">
 
         </textarea>
-      </div>
+  </div>
 
 
-      <div class="card-footer">
+  <div>
 
-        <button id="generate" class="btn">Generate Password</button>
+    <button id="generate" class="btn">Generate Password</button>
 
-      </div>
-    </div>
+  </div>
+  </div>
   </div>
   <script src="./Back.js"></script>
 </body>

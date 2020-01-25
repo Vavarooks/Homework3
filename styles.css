@@ -1,8 +1,7 @@
 h1 {
     color: lightsteelblue;
     background-color: teal;
-    margin-top: 20px;
-    padding: 10px;
+    /* margin-top: 20px; */
     text-align: center;
     font-size: 40px;
 }
@@ -10,11 +9,32 @@ h1 {
 h2 {
     color: lightsteelblue;
     background-color: teal;
-    margin: 5% ;
-    padding:10px;
+    /* margin: 5% ; */
     text-align: center;
     font-size: 30px;
 }
+
+p {
+    color: lightsteelblue;
+    background-color: teal;
+    /* margin: 5% ; */
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+/* #passwordLength {
+
+    width: 98%;
+} */
+
+label {
+
+    width: 100%;
+}
+
+
 
 div {
     margin: auto;
@@ -22,13 +42,22 @@ div {
   padding: 10px;
 }
 
+#passwordLength {
+    margin: auto;
+    width: 98%;
+    padding: 10px;
+    border-color: teal;
+    background-color: lightsteelblue;
+    border-width: 3px;
+
+}
 
 
 textarea {
     border-color: teal;
     background-color: lightsteelblue;
     border-width: 3px;
-    width: 80%;
+    width: 100%;
     height: 20%;
     text-align: center;
     line-height: 30px;
@@ -39,7 +68,7 @@ textarea {
 }
 
 button {
-    width: 160px;
+    width: 100%;
     line-height: 30px;
     text-align: center;
     font-size: 25px;
@@ -50,13 +79,20 @@ button {
 }
 
 form {
-    width: 160px;
+    width: 100%;
     line-height: 30px;
-    text-align: center;
     font-size: 25px;
     border-radius: 5px;
     color: lightsteelblue;
     background-color: teal;
     margin: 10px;
+    align-items: center;
+
+}
+
+#form2 {
+
+align-items: center;
+justify-content: center;
 
 }

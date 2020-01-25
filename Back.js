@@ -1,74 +1,78 @@
 // Assignment Code
 
-let generateBtn = document.querySelector("#generate");
+const generateBtn = document.querySelector("#generate");
 
-let lowerBtn = document.querySelector("#lowerBox").value;
+const lowerBtn = document.querySelector("#lowerBox");
 
-let upperBtn = document.querySelector("#upperBox").value;
+const upperBtn = document.querySelector("#upperBox");
 
-let numbersBtn = document.querySelector("#numbersBox").value;
+const numbersBtn = document.querySelector("#numbersBox");
 
-let symbolBtn = document.querySelector("#symbolsBox").value;
+const symbolBtn = document.querySelector("#symbolsBox");
 
+const message = document.querySelector("#passwordLength");
 
+let messageLength;
 // generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 
 
-let message = prompt("How long would you like the password?");
-let messageLength = parseInt(message);
+// let message = prompt("How long would you like the password?");
+// let messageLength = parseInt(message);
 
 
 function generatePassword() {
-  let result           = '';
+  let result = '';
   let finish = '';
-  const characters       = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
+  const characters = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
   const lowerCharacters = "abcdefghijklmnopqrstuvwxyz";
   const numbers = "0123456789"
-const symbols = `!#$%&()*+-/<=>?@[]^_{|}~`;
+  const symbols = `!#$%&()*+-/<=>?@[]^_{|}~`;
+messageLength = message.value;
 
-debugger
+console.log
 
-if (lowerBtn===true) {
-result += lowerCharacters;
-console.log(result);
-}
+  debugger
 
-if (upperBtn===true) {
-result += characters;
-console.log(result);
-}
+  if (lowerBtn.checked === true) {
+    result += lowerCharacters;
+    console.log(result);
+  }
 
-if (numbersBtn===true) {
-result += numbers;
-console.log(result);
-}
+  if (upperBtn.checked === true) {
+    result += characters;
+    console.log(result);
+  }
 
-if (symbolBtn===true) {
-result += symbols;
-console.log(result);
-}
+  if (numbersBtn.checked === true) {
+    result += numbers;
+    console.log(result);
+  }
+
+  if (symbolBtn.checked === true) {
+    result += symbols;
+    console.log(result);
+  }
 
 
-var charactersLength = result.length;
- for ( var i = 0; i < messageLength; i++ ) {
-     finish += result.charAt(Math.floor(Math.random() * charactersLength));
+  var charactersLength = result.length;
+  for (var i = 0; i < messageLength; i++) {
+    finish += result.charAt(Math.floor(Math.random() * charactersLength));
   }
   return finish;
- 
+
 }
 
 // document.getElementById('myTextarea').value = '';
 
 
-generateBtn.addEventListener("click", function() {
+generateBtn.addEventListener("click", function () {
 
   let final = generatePassword()
   document.getElementById("password").innerHTML = final
 
-alert(final);
-} );
+});
 
 
 
