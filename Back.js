@@ -1,4 +1,3 @@
-// Assignment Code
 
 const generateBtn = document.querySelector("#generate");
 
@@ -13,14 +12,6 @@ const symbolBtn = document.querySelector("#symbolsBox");
 const message = document.querySelector("#passwordLength");
 
 let messageLength;
-// generateBtn.addEventListener("click", writePassword);
-
-// Write password to the #password input
-
-
-// let message = prompt("How long would you like the password?");
-// let messageLength = parseInt(message);
-
 
 function generatePassword() {
   let result = '';
@@ -30,10 +21,6 @@ function generatePassword() {
   const numbers = "0123456789"
   const symbols = `!#$%&()*+-/<=>?@[]^_{|}~`;
 messageLength = message.value;
-
-console.log
-
-  debugger
 
   if (lowerBtn.checked === true) {
     result += lowerCharacters;
@@ -64,19 +51,9 @@ console.log
 
 }
 
-// document.getElementById('myTextarea').value = '';
-
-
 generateBtn.addEventListener("click", function () {
 
   let final = generatePassword()
   document.getElementById("password").innerHTML = final
 
 });
-
-
-
-
-// {
-//   document.getElementById("password").innerHTML = generatePassword()
-// });
